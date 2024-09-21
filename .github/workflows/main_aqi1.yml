@@ -26,6 +26,9 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
+
+      - name: Install NumPy dependencies
+        run: pip install numpy
       
       - name: Install dependencies
         run: pip install -r AzureDeployment-master/requirements.txt
